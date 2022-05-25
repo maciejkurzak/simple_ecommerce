@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    grid-gap: 2vh;
+    grid-gap: 5vh;
 }
 
 .products > .products-grid > .product {
