@@ -1,21 +1,23 @@
 <?php
 // Grabs the URI and breaks it apart in case we have querystring stuff
-$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2); ?>
-<?php require_once './private/config/variables.php'; ?>
-<!doctype html>
+$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
+require_once './private/config/variables.php';
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/styles.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/header.css">
-    <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/products.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Candle Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/styles.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/header.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/products.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Candle Shop</title>
 </head>
 <body>
 <?php include './public/templates/header.php'; ?>

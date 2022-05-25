@@ -1,0 +1,97 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px;
+}
+
+.login-container > .login-header {
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container > .login-header > p {
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.75)
+}
+
+.login-container > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.login-container > form > .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-container > form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-container > form input {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-size: 18px;
+  padding: 10px 5px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  margin-top: -3px;
+}
+
+.login-container > form input:active, .login-container > form input:focus {
+  border-bottom: solid 1px rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.login-container > form input:defined {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login-container > form button {
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  color: rgba(21, 21, 21);
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  border: none;
+  font-family: 'Noto Sans Display', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-container > form button:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.login-container > form a {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.login-container > form a:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
+.login-container > form button:not(:last-child) {
+  margin-right: 10px;
+}

@@ -38,11 +38,11 @@ $result = $conn->query($sql);
           <div class='product'>
             <img src='./public/assets/img/products/{$row['imageName']}.jpg' alt=''>
             <div class='info'>
-                <p class='category'>{$row['manufacturersName']}</p>
-                <div class='name-price'>
-                    <p class='name'>{$row['name']}</p>
-                    <p class='price'>\${$row['price']}</p>
-                </div>
+              <p class='category'>{$row['manufacturersName']}</p>
+              <div class='name-price'>
+                <p class='name'>{$row['name']}</p>
+                <p class='price'>\${$row['price']}</p>
+              </div>
             </div>
           </div>
         ";
