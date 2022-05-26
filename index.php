@@ -1,7 +1,17 @@
 <?php
-// Grabs the URI and breaks it apart in case we have querystring stuff
+
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 require_once './private/config/variables.php';
+
+session_start();
+
+include './public/src/db.php';
+include './public/src/login.php';
+include './public/src/signup.php';
+include './public/src/functions.php';
+include './public/src/logic.php';
+
+echo $_SESSION['user']['email'];
 ?>
 
 <!DOCTYPE html>
@@ -28,10 +38,19 @@ switch ($request_uri[0]) {
   // Home page
   case '/simple_ecommerce/':
     require './public/views/products.php';
-    break; // Login page
+    break;
+
+  // Login page
   case '/simple_ecommerce/login/':
     require './public/views/login.php';
-    break; // 404
+    break;
+
+  // Signup page
+  case '/simple_ecommerce/signup/':
+    require './public/views/signup.php';
+    break;
+
+  // 404
   default:
     header('HTTP/1.0 404 Not Found');
     require './public/views/404.php';

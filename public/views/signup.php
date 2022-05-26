@@ -1,9 +1,9 @@
 <div class="login-container">
   <div class='login-header'>
-    <h1>Welcome back!</h1>
-    <p>Please login to continue.</p>
+    <h1>Welcome!</h1>
+    <p>Create new account</p>
   </div>
-  <form action='<?php echo BASE_URL . '/login'; ?>' method='POST'>
+  <form method='POST'>
     <div class='form-group'>
       <label for='email'>Email</label>
       <input type='email' name='email' id='email' required>
@@ -13,7 +13,7 @@
       <input type='password' name='password' id='password' required>
     </div>
     <div class='form-group' id='buttons'>
-      <button type='submit' name='login'>Login</button>
+      <button type='submit' name='signup'>Sign up</button>
       <a href='#'>Forgot password?</a>
     </div>
   </form>
