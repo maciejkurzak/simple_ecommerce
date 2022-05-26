@@ -19,10 +19,11 @@ $sql = '
     products.name,
     price,
     imageName,
-    manufacturers.name as manufacturersName
+    manufacturers.name AS manufacturersName
   FROM 
-   products
-  LEFT JOIN manufacturers on products.manufacturerID = products.id
+    products
+      LEFT JOIN manufacturers
+        ON products.manufacturerID = manufacturers.id
 ';
 
 $result = $conn->query($sql);
