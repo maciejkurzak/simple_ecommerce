@@ -33,7 +33,7 @@
 
 .products > .products-grid > .product > .info > .category {
   font-size: 1.2vh;
-  color: rgba(150, 150, 150);
+  opacity: 0.75;
 }
 
 .products > .products-grid > .product > .info > .name-price {

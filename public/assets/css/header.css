@@ -19,11 +19,11 @@
     font-size: 2.8vh;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: var(--main-color);
 }
 
 .header > .header-inner > .logo:hover {
-    color: rgba(220, 220, 220);
+    color: var(--main-color75);
 }
 
 .header > .header-inner  > .basket-login {
@@ -37,23 +37,23 @@
     align-items: center;
     cursor: pointer;
     font-size: 1.6vh;
-    color: white;
     text-decoration: none;
     font-weight: 500;
+    color: var(--main-color);
 }
 
 .header > .header-inner  > .basket-login > a#signup {
-    color: rgba(21, 21, 21);
-    background-color: white;
+    color: var(--contrast-color);
+    background-color: var(--main-color);
     padding: 5px 20px;
 }
 
 .header > .header-inner  > .basket-login > a:hover {
-    color: rgba(220, 220, 220);
+    color: var(--main-color75);
 }
 
 .header > .header-inner  > .basket-login > a#signup:hover {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: var(--main-color75);
 }
 
 .header > .header-inner  > .basket-login > a:not(:last-child) {

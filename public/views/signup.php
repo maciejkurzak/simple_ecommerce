@@ -3,7 +3,7 @@
     <h1>Welcome!</h1>
     <p>Create new account</p>
   </div>
-  <form method='POST'>
+  <form method='POST' action='../src/signup.php'>
     <div class='form-group'>
       <label for='email'>Email</label>
       <input type='email' name='email' id='email' required>

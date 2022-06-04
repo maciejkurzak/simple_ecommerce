@@ -12,6 +12,27 @@ body {
   background-color: rgba(21, 21, 21);
   color: white;
   font-family: 'Noto Serif Display', serif;
+  --main-color: white;
+  --main-color75: rgba(255, 255, 255, 0.75);
+  --main-color50: rgba(255, 255, 255, 0.5);
+  --main-color25: rgba(255, 255, 255, 0.25);
+  --contrast-color: black;
+  --contrast-color75: rgba(0, 0, 0, 0.75);
+  --contrast-color50: rgba(0, 0, 0, 0.5);
+  --contrast-color25: rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="light"] {
+  background-color: rgba(255, 255, 255) !important;
+  color: black !important;
+  --main-color: black;
+  --main-color75: rgba(0, 0, 0, 0.75);
+  --main-color50: rgba(0, 0, 0, 0.5);
+  --main-color25: rgba(0, 0, 0, 0.25);
+  --contrast-color: white;
+  --contrast-color75: rgba(255, 255, 255, 0.75);
+  --contrast-color50: rgba(255, 255, 255, 0.5);
+  --contrast-color25: rgba(255, 255, 255, 0.25);
 }
 
 .content {

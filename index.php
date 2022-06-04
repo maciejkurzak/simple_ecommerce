@@ -1,5 +1,4 @@
 <?php
-
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 require_once './private/config/variables.php';
 
@@ -11,7 +10,9 @@ include './public/src/signup.php';
 include './public/src/functions.php';
 include './public/src/logic.php';
 
-echo $_SESSION['user']['email'];
+//echo 'email: ' . $_SESSION['email'];
+//echo '<br>';
+//echo 'password: ' . $_SESSION['password'];
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +31,10 @@ echo $_SESSION['user']['email'];
   <title>Candle Shop</title>
 </head>
 <body>
+<script>
+  const BASE_URL = '<?php echo BASE_URL; ?>';
+  let globalTheme = '<?php echo $_COOKIE['theme']; ?>';
+</script>
 <?php include './public/templates/header.php'; ?>
 <div class='content'>
 <?php // Router
