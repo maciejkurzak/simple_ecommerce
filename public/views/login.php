@@ -3,7 +3,7 @@
     <h1>Welcome back!</h1>
     <p>Please login to continue.</p>
   </div>
-  <form action='<?php echo BASE_URL . '/login'; ?>' method='POST'>
+  <form method='POST' action='../src/signup.php'>
     <div class='form-group'>
       <label for='email'>Email</label>
       <input type='email' name='email' id='email' required>

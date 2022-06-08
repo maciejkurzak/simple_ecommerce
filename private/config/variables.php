@@ -11,3 +11,7 @@ const DATABASE_ADDRESS = 'localhost';
 const DATABASE_USERNAME = 'root';
 const DATABASE_PASSWORD = '1234';
 const DATABASE_NAME = 'simple_ecommerce';
+
+const hash_options = [
+  'cost' => 10,
+];

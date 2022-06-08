@@ -9,10 +9,6 @@ include './public/src/login.php';
 include './public/src/signup.php';
 include './public/src/functions.php';
 include './public/src/logic.php';
-
-//echo 'email: ' . $_SESSION['email'];
-//echo '<br>';
-//echo 'password: ' . $_SESSION['password'];
 ?>
 
 <!DOCTYPE html>
@@ -43,6 +39,11 @@ switch ($request_uri[0]) {
   // Home page
   case '/simple_ecommerce/':
     require './public/views/products.php';
+    break;
+
+  // Logout page
+  case '/simple_ecommerce/logout/':
+    require './public/src/logout.php';
     break;
 
   // Login page
