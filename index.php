@@ -1,5 +1,5 @@
 <?php
-$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
+$request_uri = explode('?', $_SERVER['REQUEST_URI']);
 require_once './private/config/variables.php';
 
 session_start();
@@ -20,6 +20,7 @@ include './public/src/logic.php';
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/styles.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/header.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/products.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/product.css">
   <link rel="stylesheet" href="<?php echo BASE_URL; ?>public/assets/css/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +40,11 @@ switch ($request_uri[0]) {
   // Home page
   case '/simple_ecommerce/':
     require './public/views/products.php';
+    break;
+
+  // Product page
+  case '/simple_ecommerce/product/':
+    require './public/views/product.php';
     break;
 
   // Logout page

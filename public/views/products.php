@@ -36,7 +36,7 @@ $result = $conn->query($sql);
     if ($result->num_rows > 0) {
       while ($row = $result->fetch_assoc()) {
         echo "
-          <div class='product'>
+          <a class='product' href='product?id={$row['id']}'>
             <img src='./public/assets/img/products/{$row['imageName']}.jpg' alt=''>
             <div class='info'>
               <p class='category'>{$row['manufacturersName']}</p>
@@ -45,7 +45,7 @@ $result = $conn->query($sql);
                 <p class='price'>\${$row['price']}</p>
               </div>
             </div>
-          </div>
+          </a>
         ";
       }
     } else {
